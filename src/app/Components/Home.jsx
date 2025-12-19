@@ -1,65 +1,141 @@
+'use client'
 import React from 'react';
-import Asistencia from '../images/cati_ASISTENCIA.jpg'
-import Direccion from '../images/cati_DIRECCIÓN.jpg'
-import Playlist from '../images/cati_PLAYLIST.jpg'
-import Regalo from '../images/cati_REGALO.jpg'
-import TeEspero from '../images/cati_TEESPERO.jpg'
-import Fondo from '../images/cati_FONDO.jpg'
+import Asistencia from '../images/cati_ASISTENCIA.jpg';
+import Direccion from '../images/cati_DIRECCIÓN.jpg';
+import Playlist from '../images/cati_PLAYLIST.jpg';
+import Regalo from '../images/cati_REGALO.jpg';
+import TeEspero from '../images/cati_TEESPERO.jpg';
+import Fondo from '../images/cati_FONDO.jpg';
 import Image from 'next/image';
+import Link from 'next/link';
+import MyCountdown from './Timer';
+
 
 const HomePage = () => {
-    return (
+  return (
+    // CONTENEDOR GENERAL (fondo desktop)
+    <div
+      style={{
+        minHeight: '100vh',
+        background: '#716558', // luego cambiás el color
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
+      {/* CONTENEDOR STORY */}
+      <div
+        style={{
+          maxWidth: '430px',
+          width: '100%',
+        }}
+      >
         <div className="home-container">
-            <div className="image-wrapper">
-                <Image 
-                    src={Fondo} 
-                    alt="Fondo"
-                    style={{ width: '100%', height: 'auto' }}
-                    layout="responsive"
-                />
+      <div className="image-wrapper" style={{ position: 'relative' }}>
+  <Image src={Fondo} alt="Fondo" layout="responsive" />
+  <MyCountdown />
+</div>
+
+          <div style={{ position: 'relative', width: '100%' }}>
+            <Image src={Direccion} alt="Dirección" layout="responsive" />
+
+            <Link
+              href="https://www.google.com/maps/place/Finca+La+Mariana/@-33.1017999,-68.4084655,16z"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                position: 'absolute',
+                top: '60%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                padding: '18px 48px',
+                borderRadius: '999px',
+                background: 'rgba(255,255,255,0.9)',
+                color: '#716558',
+                fontWeight: 700,
+                fontSize: '20px',
+                textDecoration: 'none',
+                boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+                backdropFilter: 'blur(4px)',
+                cursor: 'pointer',
+                zIndex: 10,
+              }}
+            >
+              Aquí
+            </Link>
+          </div>
+
+          <div className="image-wrapper">
+             <div style={{ position: 'relative', width: '100%' }}>
+            <Image src={Asistencia} alt="Asistencia" layout="responsive" />
+                  <Link
+              href="https://forms.gle/jBMUTboGFGAvjzsV8"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                position: 'absolute',
+                top: '60%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                padding: '18px 48px',
+                borderRadius: '999px',
+                background: 'rgba(255,255,255,0.9)',
+                color: '#716558',
+                fontWeight: 700,
+                fontSize: '20px',
+                textDecoration: 'none',
+                boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+                backdropFilter: 'blur(4px)',
+                cursor: 'pointer',
+                zIndex: 10,
+              }}
+            >
+              Confirmar
+            </Link>
             </div>
-            <div className="image-wrapper">
-                <Image 
-                    src={TeEspero} 
-                    alt="Te Espero"
-                    style={{ width: '100%', height: 'auto' }}
-                    layout="responsive"
-                />
+          </div>
+
+          <div className="image-wrapper">
+            <Image src={Regalo} alt="Regalo" layout="responsive" />
+          </div>
+
+          <div className="image-wrapper">
+            
+          <div style={{ position: 'relative', width: '100%' }}>
+            <Image src={Playlist} alt="Playlist" layout="responsive" />
+              <Link
+              href="https://open.spotify.com/playlist/22BALEg2TqsKwBk90PA7aX?si=1OV1ZNQEQjWAzLWQOJSrXw"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                position: 'absolute',
+                top: '70%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                padding: '18px 48px',
+                borderRadius: '999px',
+                background: 'rgba(255,255,255,0.9)',
+                color: '#716558',
+                fontWeight: 700,
+                fontSize: '20px',
+                textDecoration: 'none',
+                boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+                backdropFilter: 'blur(4px)',
+                cursor: 'pointer',
+                zIndex: 10,
+              }}
+            >
+              Aquí
+            </Link>
             </div>
-            <div className="image-wrapper">
-                <Image 
-                    src={Asistencia} 
-                    alt="Asistencia"
-                    style={{ width: '100%', height: 'auto' }}
-                    layout="responsive"
-                />
-            </div>
-            <div className="image-wrapper">
-                <Image 
-                    src={Direccion} 
-                    alt="Dirección"
-                    style={{ width: '100%', height: 'auto' }}
-                    layout="responsive"
-                />
-            </div>
-            <div className="image-wrapper">
-                <Image 
-                    src={Playlist} 
-                    alt="Playlist"
-                    style={{ width: '100%', height: 'auto' }}
-                    layout="responsive"
-                />
-            </div>
-            <div className="image-wrapper">
-                <Image 
-                    src={Regalo} 
-                    alt="Regalo"
-                    style={{ width: '100%', height: 'auto' }}
-                    layout="responsive"
-                />
-            </div>
+          </div>
+
+          <div className="image-wrapper">
+            <Image src={TeEspero} alt="Te Espero" layout="responsive" />
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default HomePage;
