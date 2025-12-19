@@ -39,7 +39,7 @@ const HomePage = () => {
             <Image src={Direccion} alt="Dirección" layout="responsive" />
 
             <Link
-              href="https://www.google.com/maps/place/Finca+La+Mariana/@-33.1017999,-68.4084655,16z"
+              href="https://maps.app.goo.gl/fwnoKC1SyiY3QUJx8"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -103,7 +103,7 @@ const HomePage = () => {
           <div style={{ position: 'relative', width: '100%' }}>
             <Image src={Playlist} alt="Playlist" layout="responsive" />
               <Link
-              href="https://open.spotify.com/playlist/22BALEg2TqsKwBk90PA7aX?si=1OV1ZNQEQjWAzLWQOJSrXw"
+              href="https://open.spotify.com/playlist/22BALEg2TqsKwBk90PA7aX?si=P2ZrH20PT4KZODRfm2kHWw&pt=191953ca6467c81d73563e3a21284396&pi=2t7l6gjMTRSFm"
               target="_blank"
               rel="noopener noreferrer"
               style={{
