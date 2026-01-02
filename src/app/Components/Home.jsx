@@ -103,7 +103,7 @@ const HomePage = () => {
           <div style={{ position: 'relative', width: '100%' }}>
             <Image src={Playlist} alt="Playlist" layout="responsive" />
               <Link
-              href="https://open.spotify.com/playlist/22BALEg2TqsKwBk90PA7aX?si=P2ZrH20PT4KZODRfm2kHWw&pt=191953ca6467c81d73563e3a21284396&pi=2t7l6gjMTRSFm"
+              href="https://open.spotify.com/playlist/22BALEg2TqsKwBk90PA7aX?si=tDRh0dTSRRa2n7CqhYVn8Q&pt=08f770529d9d160fc1027b98e9b4d1f7&pi=_101OpdpS8mDI"
               target="_blank"
               rel="noopener noreferrer"
               style={{
